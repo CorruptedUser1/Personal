@@ -1,0 +1,743 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local UI = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local sideHolder = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local home = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local localP = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local players = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local scripts = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local settings = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local mainHolder = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local homeFrame = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local localFrame = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_8 = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local holder = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local playersFrame = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local holder_2 = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local TextLabel_9 = Instance.new("TextLabel")
+local UICorner_21 = Instance.new("UICorner")
+local scriptsFrame = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local holder_3 = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local TextLabel_10 = Instance.new("TextLabel")
+local UICorner_24 = Instance.new("UICorner")
+local settingsFrame = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local holder_4 = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local TextLabel_11 = Instance.new("TextLabel")
+local UICorner_27 = Instance.new("UICorner")
+local userHolder = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local ImageLabel_6 = Instance.new("ImageLabel")
+local UICorner_29 = Instance.new("UICorner")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local ImageLabel_7 = Instance.new("ImageLabel")
+local UICorner_30 = Instance.new("UICorner")
+local Frame_3 = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local handlerV1 = Instance.new("Folder")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+UI.Name = "UI"
+UI.Parent = ScreenGui
+UI.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+UI.Position = UDim2.new(0.3239609, 0, 0.285194159, 0)
+UI.Size = UDim2.new(0, 575, 0, 353)
+
+UICorner.CornerRadius = UDim.new(0, 15)
+UICorner.Parent = UI
+
+sideHolder.Name = "sideHolder"
+sideHolder.Parent = UI
+sideHolder.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+sideHolder.Position = UDim2.new(0.0173913036, 0, 0.019830022, 0)
+sideHolder.Size = UDim2.new(0, 72, 0, 283)
+
+UICorner_2.Parent = sideHolder
+
+UIListLayout.Parent = sideHolder
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 10)
+
+home.Name = "home"
+home.Parent = sideHolder
+home.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+home.Size = UDim2.new(0, 45, 0, 45)
+home.ZIndex = 2
+home.AutoButtonColor = false
+home.Font = Enum.Font.SourceSans
+home.Text = ""
+home.TextColor3 = Color3.fromRGB(0, 0, 0)
+home.TextSize = 14.000
+home.TextTransparency = 1.000
+
+UICorner_3.Parent = home
+
+ImageLabel.Parent = home
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.106666669, 0, 0.106666684, 0)
+ImageLabel.Size = UDim2.new(0, 35, 0, 35)
+ImageLabel.ZIndex = -1
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6026568198"
+ImageLabel.ImageColor3 = Color3.fromRGB(0, 196, 255)
+
+TextLabel.Parent = home
+TextLabel.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel.BorderColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel.Position = UDim2.new(-0.13333334, 0, 0.0666666701, 0)
+TextLabel.Size = UDim2.new(0, 0, 0, 39)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "Home"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextTransparency = 1.000
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = TextLabel
+
+localP.Name = "localP"
+localP.Parent = sideHolder
+localP.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+localP.Size = UDim2.new(0, 45, 0, 45)
+localP.ZIndex = 2
+localP.AutoButtonColor = false
+localP.Font = Enum.Font.SourceSans
+localP.Text = ""
+localP.TextColor3 = Color3.fromRGB(0, 0, 0)
+localP.TextSize = 14.000
+localP.TextTransparency = 1.000
+
+UICorner_5.Parent = localP
+
+ImageLabel_2.Parent = localP
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.106666669, 0, 0.106666684, 0)
+ImageLabel_2.Size = UDim2.new(0, 35, 0, 35)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=6022668945"
+ImageLabel_2.ImageColor3 = Color3.fromRGB(0, 196, 255)
+
+TextLabel_2.Parent = localP
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel_2.BorderColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel_2.Position = UDim2.new(-0.13333334, 0, 0.0666666701, 0)
+TextLabel_2.Size = UDim2.new(0, 0, 0, 39)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "Local Player"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextTransparency = 1.000
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = TextLabel_2
+
+players.Name = "players"
+players.Parent = sideHolder
+players.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+players.Size = UDim2.new(0, 45, 0, 45)
+players.ZIndex = 2
+players.AutoButtonColor = false
+players.Font = Enum.Font.SourceSans
+players.Text = ""
+players.TextColor3 = Color3.fromRGB(0, 0, 0)
+players.TextSize = 14.000
+players.TextTransparency = 1.000
+
+UICorner_7.Parent = players
+
+ImageLabel_3.Parent = players
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.106666669, 0, 0.106666684, 0)
+ImageLabel_3.Size = UDim2.new(0, 35, 0, 35)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=6034281901"
+ImageLabel_3.ImageColor3 = Color3.fromRGB(0, 196, 255)
+
+TextLabel_3.Parent = players
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel_3.BorderColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel_3.Position = UDim2.new(-0.13333334, 0, 0.0666666701, 0)
+TextLabel_3.Size = UDim2.new(0, 0, 0, 39)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = "Players"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextTransparency = 1.000
+
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = TextLabel_3
+
+scripts.Name = "scripts"
+scripts.Parent = sideHolder
+scripts.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+scripts.Size = UDim2.new(0, 45, 0, 45)
+scripts.ZIndex = 2
+scripts.AutoButtonColor = false
+scripts.Font = Enum.Font.SourceSans
+scripts.Text = ""
+scripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+scripts.TextSize = 14.000
+scripts.TextTransparency = 1.000
+
+UICorner_9.Parent = scripts
+
+ImageLabel_4.Parent = scripts
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.106666669, 0, 0.106666684, 0)
+ImageLabel_4.Size = UDim2.new(0, 35, 0, 35)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id=6022668955"
+ImageLabel_4.ImageColor3 = Color3.fromRGB(0, 196, 255)
+
+TextLabel_4.Parent = scripts
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel_4.BorderColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel_4.Position = UDim2.new(-0.13333334, 0, 0.0666666701, 0)
+TextLabel_4.Size = UDim2.new(0, 0, 0, 39)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "Scripts"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextTransparency = 1.000
+
+UICorner_10.CornerRadius = UDim.new(0, 3)
+UICorner_10.Parent = TextLabel_4
+
+settings.Name = "settings"
+settings.Parent = sideHolder
+settings.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+settings.Size = UDim2.new(0, 45, 0, 45)
+settings.ZIndex = 2
+settings.AutoButtonColor = false
+settings.Font = Enum.Font.SourceSans
+settings.Text = ""
+settings.TextColor3 = Color3.fromRGB(0, 0, 0)
+settings.TextSize = 14.000
+settings.TextTransparency = 1.000
+
+UICorner_11.Parent = settings
+
+ImageLabel_5.Parent = settings
+ImageLabel_5.BackgroundTransparency = 1.000
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0.106666669, 0, 0.106666684, 0)
+ImageLabel_5.Size = UDim2.new(0, 35, 0, 35)
+ImageLabel_5.Image = "http://www.roblox.com/asset/?id=6031280882"
+ImageLabel_5.ImageColor3 = Color3.fromRGB(0, 196, 255)
+
+TextLabel_5.Parent = settings
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel_5.BorderColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel_5.Position = UDim2.new(-0.13333334, 0, 0.0666666701, 0)
+TextLabel_5.Size = UDim2.new(0, 0, 0, 39)
+TextLabel_5.Font = Enum.Font.Gotham
+TextLabel_5.Text = "Settings"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextTransparency = 1.000
+
+UICorner_12.CornerRadius = UDim.new(0, 3)
+UICorner_12.Parent = TextLabel_5
+
+mainHolder.Name = "mainHolder"
+mainHolder.Parent = UI
+mainHolder.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+mainHolder.Position = UDim2.new(0.163478255, 0, 0.181303114, 0)
+mainHolder.Size = UDim2.new(0, 471, 0, 283)
+
+UICorner_13.Parent = mainHolder
+
+ScrollingFrame.Parent = mainHolder
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(124, 124, 124)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Size = UDim2.new(0, 470, 0, 283)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 50, 0)
+ScrollingFrame.ScrollBarThickness = 3
+
+homeFrame.Name = "homeFrame"
+homeFrame.Parent = ScrollingFrame
+homeFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+homeFrame.Position = UDim2.new(0.029787235, 0, 0.00077738706, 0)
+homeFrame.Size = UDim2.new(0, 443, 0, 260)
+
+UICorner_14.Parent = homeFrame
+
+TextLabel_6.Parent = homeFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.18730256, 0, 0.0461538471, 0)
+TextLabel_6.Size = UDim2.new(0, 277, 0, 38)
+TextLabel_6.ZIndex = 2
+TextLabel_6.Font = Enum.Font.GothamBold
+TextLabel_6.Text = "Welcome"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 196, 255)
+TextLabel_6.TextSize = 19.000
+
+Frame.Parent = TextLabel_6
+Frame.BackgroundColor3 = Color3.fromRGB(190, 190, 190)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-0.190199733, 0, 0.980000019, 0)
+Frame.Size = UDim2.new(0, 382, 0, 1)
+
+TextLabel_7.Parent = homeFrame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.069977425, 0, 0.214615226, 0)
+TextLabel_7.Size = UDim2.new(0, 379, 0, 188)
+TextLabel_7.Visible = false
+TextLabel_7.ZIndex = 2
+TextLabel_7.Font = Enum.Font.GothamBold
+TextLabel_7.Text = "Hello my beautiful wife, its me your Hubby. I really hope you love this Overhauled Gui i have made for you. And there is something i want to tell you.. If you are ever feeling down or feel alone, just remember ill always be here for you. And if you EVER need comfort, i will wrap my arms around you and make you better.. And another thing to remember, is that i will ALWAYS love you, and love who you are as a person. Never doubt my love for you. My love for you is eternal and forever lasting. I LOVE YOU BABYY"
+TextLabel_7.TextColor3 = Color3.fromRGB(194, 194, 194)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 19.000
+TextLabel_7.TextWrapped = true
+
+Frame_2.Parent = homeFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Frame_2.Position = UDim2.new(0.0270880368, 0, 0.0461538471, 0)
+Frame_2.Size = UDim2.new(0, 419, 0, 236)
+
+UICorner_15.Parent = Frame_2
+
+localFrame.Name = "localFrame"
+localFrame.Parent = ScrollingFrame
+localFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+localFrame.Position = UDim2.new(0.0276595764, 0, 0.0219788011, 0)
+localFrame.Size = UDim2.new(0, 443, 0, 260)
+
+UICorner_16.Parent = localFrame
+
+TextLabel_8.Parent = localFrame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel_8.Position = UDim2.new(0, 0, 0.00307687605, 0)
+TextLabel_8.Size = UDim2.new(0, 125, 0, 40)
+TextLabel_8.ZIndex = 2
+TextLabel_8.Font = Enum.Font.GothamBold
+TextLabel_8.Text = "Local Player"
+TextLabel_8.TextColor3 = Color3.fromRGB(0, 196, 255)
+TextLabel_8.TextSize = 15.000
+
+UICorner_17.Parent = TextLabel_8
+
+holder.Name = "holder"
+holder.Parent = localFrame
+holder.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+holder.Position = UDim2.new(0.0270880368, 0, 0.0461538471, 0)
+holder.Size = UDim2.new(0, 419, 0, 236)
+
+UICorner_18.Parent = holder
+
+playersFrame.Name = "playersFrame"
+playersFrame.Parent = ScrollingFrame
+playersFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+playersFrame.Position = UDim2.new(0.0276595764, 0, 0.0431802124, 0)
+playersFrame.Size = UDim2.new(0, 443, 0, 260)
+
+UICorner_19.Parent = playersFrame
+
+holder_2.Name = "holder"
+holder_2.Parent = playersFrame
+holder_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+holder_2.Position = UDim2.new(0.0270880368, 0, 0.0461538471, 0)
+holder_2.Size = UDim2.new(0, 419, 0, 236)
+
+UICorner_20.Parent = holder_2
+
+TextLabel_9.Parent = playersFrame
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel_9.Position = UDim2.new(0, 0, 0.00307687605, 0)
+TextLabel_9.Size = UDim2.new(0, 125, 0, 40)
+TextLabel_9.ZIndex = 2
+TextLabel_9.Font = Enum.Font.GothamBold
+TextLabel_9.Text = "Players"
+TextLabel_9.TextColor3 = Color3.fromRGB(0, 196, 255)
+TextLabel_9.TextSize = 15.000
+
+UICorner_21.Parent = TextLabel_9
+
+scriptsFrame.Name = "scriptsFrame"
+scriptsFrame.Parent = ScrollingFrame
+scriptsFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+scriptsFrame.Position = UDim2.new(0.029787235, 0, 0.0643816292, 0)
+scriptsFrame.Size = UDim2.new(0, 443, 0, 260)
+
+UICorner_22.Parent = scriptsFrame
+
+holder_3.Name = "holder"
+holder_3.Parent = scriptsFrame
+holder_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+holder_3.Position = UDim2.new(0.0270880368, 0, 0.0461538471, 0)
+holder_3.Size = UDim2.new(0, 419, 0, 236)
+
+UICorner_23.Parent = holder_3
+
+TextLabel_10.Parent = scriptsFrame
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel_10.Position = UDim2.new(0, 0, 0.00307687605, 0)
+TextLabel_10.Size = UDim2.new(0, 125, 0, 40)
+TextLabel_10.ZIndex = 2
+TextLabel_10.Font = Enum.Font.GothamBold
+TextLabel_10.Text = "Scripts"
+TextLabel_10.TextColor3 = Color3.fromRGB(0, 196, 255)
+TextLabel_10.TextSize = 15.000
+
+UICorner_24.Parent = TextLabel_10
+
+settingsFrame.Name = "settingsFrame"
+settingsFrame.Parent = ScrollingFrame
+settingsFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+settingsFrame.Position = UDim2.new(0.0276595764, 0, 0.0855830461, 0)
+settingsFrame.Size = UDim2.new(0, 443, 0, 260)
+
+UICorner_25.Parent = settingsFrame
+
+holder_4.Name = "holder"
+holder_4.Parent = settingsFrame
+holder_4.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+holder_4.Position = UDim2.new(0.0270880368, 0, 0.0461538471, 0)
+holder_4.Size = UDim2.new(0, 419, 0, 236)
+
+UICorner_26.Parent = holder_4
+
+TextLabel_11.Parent = settingsFrame
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TextLabel_11.Position = UDim2.new(0, 0, 0.00307687605, 0)
+TextLabel_11.Size = UDim2.new(0, 125, 0, 40)
+TextLabel_11.ZIndex = 2
+TextLabel_11.Font = Enum.Font.GothamBold
+TextLabel_11.Text = "Settings"
+TextLabel_11.TextColor3 = Color3.fromRGB(0, 196, 255)
+TextLabel_11.TextSize = 15.000
+
+UICorner_27.Parent = TextLabel_11
+
+userHolder.Name = "userHolder"
+userHolder.Parent = UI
+userHolder.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+userHolder.Position = UDim2.new(0.163478255, 0, 0.0198300276, 0)
+userHolder.Size = UDim2.new(0, 471, 0, 47)
+
+UICorner_28.Parent = userHolder
+
+ImageLabel_6.Parent = userHolder
+ImageLabel_6.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+ImageLabel_6.Position = UDim2.new(0, 5, 0.5, -20)
+ImageLabel_6.Size = UDim2.new(0, 40, 0, 40)
+
+UICorner_29.Parent = ImageLabel_6
+
+TextLabel_12.Parent = ImageLabel_6
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(1.32500005, 0, 0, 0)
+TextLabel_12.Size = UDim2.new(0, 161, 0, 40)
+TextLabel_12.Font = Enum.Font.GothamBold
+TextLabel_12.Text = "OnlyTwentyCharacters"
+TextLabel_12.TextColor3 = Color3.fromRGB(0, 196, 255)
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_13.Parent = userHolder
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.855622828, 0, 0, 0)
+TextLabel_13.Size = UDim2.new(0, 68, 0, 48)
+TextLabel_13.Font = Enum.Font.Gotham
+TextLabel_13.Text = "Bind: N"
+TextLabel_13.TextColor3 = Color3.fromRGB(0, 196, 255)
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_7.Parent = UI
+ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_7.BackgroundTransparency = 1.000
+ImageLabel_7.Size = UDim2.new(0, 575, 0, 353)
+ImageLabel_7.ZIndex = 0
+ImageLabel_7.Image = "rbxassetid://3899340539"
+
+UICorner_30.CornerRadius = UDim.new(0, 15)
+UICorner_30.Parent = ImageLabel_7
+
+Frame_3.Name = "Frame"
+Frame_3.Parent = UI
+Frame_3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Frame_3.Position = UDim2.new(0.0173913036, 0, 0.847025514, 0)
+Frame_3.Size = UDim2.new(0, 72, 0, 48)
+Frame_3.ZIndex = 2
+Frame_3.AutoButtonColor = false
+Frame_3.Font = Enum.Font.SourceSans
+Frame_3.Text = "1.0.0"
+Frame_3.TextColor3 = Color3.fromRGB(0, 196, 255)
+Frame_3.TextSize = 20.000
+
+UICorner_31.Parent = Frame_3
+
+handlerV1.Name = "handler-V1"
+handlerV1.Parent = ScreenGui
+
+-- Scripts:
+
+local function TCUL_fake_script() -- handlerV1.userInfo 
+	local script = Instance.new('LocalScript', handlerV1)
+
+	script.Parent.Parent.UI:WaitForChild('userHolder').ImageLabel.TextLabel.Text = game.Players.LocalPlayer.Name
+	
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	local imageLabel = script.Parent.Parent.UI:WaitForChild('userHolder').ImageLabel
+	imageLabel.Image = content
+	
+	script.Parent.Parent.UI:WaitForChild('mainHolder').ScrollingFrame.homeFrame.TextLabel.Text = 'Welcome, '..game.Players.LocalPlayer.Name
+end
+coroutine.wrap(TCUL_fake_script)()
+local function GNWFNU_fake_script() -- handlerV1.uiControl 
+	local script = Instance.new('LocalScript', handlerV1)
+
+	p = game.Players.LocalPlayer
+	mouse = p:GetMouse()
+	
+	mouse.KeyDown:connect(function(key)
+		if key == "n" then
+			if script.Parent.Parent.UI.Visible == true then
+				script.Parent.Parent.UI.Visible = false
+			else
+				script.Parent.Parent.UI.Visible = true
+			end
+		end
+	end)
+	
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent.Parent.UI
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (20); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+	
+	script.Parent.Parent.UI.sideHolder:WaitForChild('home').MouseButton1Click:Connect(function()
+		local Info = TweenInfo.new(0.1)
+		local tween = game:GetService('TweenService'):Create(script.Parent.Parent.UI.mainHolder.ScrollingFrame,Info,{CanvasPosition = Vector2.new(0,0)})
+		tween:Play()
+	end)
+	
+	script.Parent.Parent.UI.sideHolder:WaitForChild('localP').MouseButton1Click:Connect(function()
+		local Info = TweenInfo.new(0.1)
+		local tween = game:GetService('TweenService'):Create(script.Parent.Parent.UI.mainHolder.ScrollingFrame,Info,{CanvasPosition = Vector2.new(0,300)})
+		tween:Play()
+	end)
+	
+	script.Parent.Parent.UI.sideHolder:WaitForChild('players').MouseButton1Click:Connect(function()
+		local Info = TweenInfo.new(0.1)
+		local tween = game:GetService('TweenService'):Create(script.Parent.Parent.UI.mainHolder.ScrollingFrame,Info,{CanvasPosition = Vector2.new(0,600)})
+		tween:Play()
+	end)
+	
+	script.Parent.Parent.UI.sideHolder:WaitForChild('scripts').MouseButton1Click:Connect(function()
+		local Info = TweenInfo.new(0.1)
+		local tween = game:GetService('TweenService'):Create(script.Parent.Parent.UI.mainHolder.ScrollingFrame,Info,{CanvasPosition = Vector2.new(0,900)})
+		tween:Play()
+	end)
+	
+	script.Parent.Parent.UI.sideHolder:WaitForChild('settings').MouseButton1Click:Connect(function()
+		local Info = TweenInfo.new(0.1)
+		local tween = game:GetService('TweenService'):Create(script.Parent.Parent.UI.mainHolder.ScrollingFrame,Info,{CanvasPosition = Vector2.new(0,1200)})
+		tween:Play()
+	end)
+	
+	for i,k in pairs(script.Parent.Parent.UI.sideHolder:GetChildren()) do
+		if k:IsA('TextButton') then
+			k.MouseEnter:Connect(function()
+				local Info = TweenInfo.new(0.1)
+				local tween = game:GetService('TweenService'):Create(k,Info,{BackgroundColor3 = Color3.fromRGB(50,50,50)})
+				tween:Play()
+			end)
+	
+			k.MouseLeave:Connect(function()
+				local Info = TweenInfo.new(0.1)
+				local tween = game:GetService('TweenService'):Create(k,Info,{BackgroundColor3 = Color3.fromRGB(60,60,60)})
+				tween:Play()
+			end)
+		end
+	end
+	
+	for i,l in pairs(script.Parent.Parent.UI.sideHolder:GetChildren()) do
+		if l:IsA('TextButton') then
+			for i,d in pairs(l:GetChildren()) do
+				if d:IsA('TextLabel') then
+					d.Parent.MouseEnter:Connect(function()
+						local Info = TweenInfo.new(0.1)
+						local tween = game:GetService('TweenService'):Create(d,Info,{Size = UDim2.new(0, -93,0, 39)})
+						tween:Play()
+						d.TextTransparency = 0
+					end)
+	
+					d.Parent.MouseLeave:Connect(function()
+						d.TextTransparency = 1
+						local Info = TweenInfo.new(0.1)
+						local tween = game:GetService('TweenService'):Create(d,Info,{Size = UDim2.new(0, 0,0, 39)})
+						tween:Play()
+						d.TextTransparency = 1
+					end)
+				end
+			end
+		end
+	end
+end
+coroutine.wrap(GNWFNU_fake_script)()
+local function MAVLT_fake_script() -- handlerV1.strokeHandlerV2 
+	local script = Instance.new('LocalScript', handlerV1)
+
+	for i,v in pairs(script.Parent.Parent:GetChildren()) do
+		if v:IsA('Frame') and v.Name == 'UI' then
+			local stroke = Instance.new('UIStroke')
+			stroke.Parent = script
+			local clone = stroke:Clone()
+			clone.Parent = v
+			clone.Color = Color3.fromRGB(80, 80, 80)
+			clone.Thickness = 2
+			clone.ApplyStrokeMode = 'Border'
+		end
+	end
+	
+	for i,b in pairs(script.Parent.Parent.UI:GetChildren()) do
+		if b:IsA('Frame') or b:IsA('TextButton') then
+			stroke = script.UIStroke
+			local clone = stroke:Clone()
+			clone.Parent = b
+			clone.Color = Color3.fromRGB(60, 60, 60)
+			clone.Thickness = 1
+			clone.ApplyStrokeMode = 'Border'
+		end
+	end
+	
+	for i,n in pairs(script.Parent.Parent.UI.sideHolder:GetChildren()) do
+		if n:IsA('TextButton') then
+			stroke = script.UIStroke
+			local clone = stroke:Clone()
+			clone.Parent = n
+			clone.Color = Color3.fromRGB(81, 81, 81)
+			clone.Thickness = 1
+			clone.ApplyStrokeMode = 'Border'
+		end
+	end
+	
+	for i,m in pairs(script.Parent.Parent.UI.mainHolder.ScrollingFrame:GetChildren()) do
+		if m:IsA('Frame') then
+			for i,c in pairs(m:GetChildren()) do
+				if c:IsA('Frame') then
+					stroke = script.UIStroke
+					local clone = stroke:Clone()
+					clone.Parent = c
+					clone.Color = Color3.fromRGB(81, 81, 81)
+					clone.Thickness = 1
+					clone.ApplyStrokeMode = 'Border'
+				end
+			end
+		end
+	end
+end
+coroutine.wrap(MAVLT_fake_script)()
